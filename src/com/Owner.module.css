@@ -1,0 +1,55 @@
+
+
+  .allform {
+   display: grid;
+   margin-left: auto;
+   margin-right:auto;
+   width: 50%;
+   grid-template-areas:
+   "mod mod mod mod mod"
+     "hd hd hd hd hd "
+   "bt1 bt1 st bt2 bt2 "
+   " db db db db db ";
+}
+.modal{
+  grid-area: mod;
+}
+.status{
+  grid-area: st;
+  background-color: aqua;
+  font-size: 28px;
+  color: rgba(255, 0, 0, 0.418); 
+}
+.taskname{
+  grid-area: hd;
+  border-color: rgb(0, 255, 106);
+  background-color: #808080;
+    border: 3px solid #719ECE;
+    border-radius: 12px;
+    font-size: 18px;
+    box-shadow: 0 0  100px #719ECE;
+}
+.button{
+  grid-area: bt1;
+   color: brown;
+   border-radius: 12px;
+   background-color: chartreuse;
+   
+}
+.button2{
+  grid-area: bt2;
+    color: brown;
+    border-radius: 12px;
+    background-color: chartreuse;
+ }
+ .dbdata{
+  grid-area: db;
+
+   color: black;
+   background-color: #968943 ;
+  overflow-wrap: break-word;
+ }
+ .dbdata1{
+  
+ }
+

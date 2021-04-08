@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="" lang="ru" slick-uniqueid="3">
+<head>
+<title></title>
+<style>
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+}
+*, ::after, ::before {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+body {
+	position: relative;
+	background: #fff;
+	font-family: Roboto,sans-serif;
+	font-size: 100%;
+	color: #363636;
+	margin: 0;
+	padding: 0;
+}
+blockquote, body, dd, div, dl, dt, fieldset, figure, form, html, input, li, pre, section, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+p {
+	font-size: 1.12rem;
+}
+::selection {
+	color: #000;
+	background-color: #01bc78;
+}
+input[type=date], input[type=email], input[type=password], input[type=text], input[type=url], textarea {
+	padding: 10px;
+	width: 65%;
+	border: 1px solid #bbb;
+	font-size: 16px;
+	border-radius: 0;
+}
+#wpcf7-f2344-p3992-o1 input[type=text], input[type=date], input[type=email], input[type=password], input[type=url], textarea {
+	padding: 9px;
+	border: none;
+	border-left: 4px solid #de722e;
+	outline: 0;
+	font-family: Roboto !important;
+	font-size: 16px;
+}
+#wpcf7-f2344-p3992-o1 input[type=text]:focus, input[type=date]:focus, input[type=email]:focus, input[type=password]:focus, input[type=url]:focus, textarea:focus {
+	border: none;
+	border-left: 4px solid #f97a2b;
+}
+#respond input, #respond textarea {
+	padding: 2%;
+	width: 35%;
+	background: #fefefe;
+	color: #333;
+	font-family: Roboto,sans-serif;
+	border: 2px solid #d0d0d0;
+	outline: 0;
+	font-size: 1em;
+}
+#respond textarea {
+	width: 96%;
+}
+#respond input:focus, #respond textarea:focus {
+	border: 2px solid #49d09e;
+}
+div.content p {
+	font-size: 18px;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+}
+#comments-container p, .number-comments, .post-meta p {
+	text-indent: 0px;
+	font-size: 1em;
+}
+#comments-container p, .number-comments, .post-meta p {
+	text-indent: 0px;
+}
+#comments-container p, .number-comments, .post-meta p {
+	text-indent: 0px;
+	font-size: 1em;
+}
+#respond {
+	margin-top: 40px;
+	padding: 3%;
+	background: #f9f9f9;
+	border: 1px solid #d6d6d6;
+}
+.comments-area {
+	padding: 1em 0 0;
+}
+.comments-container {
+	padding-bottom: 1em;
+	border-bottom: 1px solid #cfd3d5;
+}
+.cf::after, .cf::before {
+	content: " ";
+	display: table;
+}
+.cf::after {
+	clear: both;
+}
+div.content--fullwidth {
+	float: none;
+	margin: auto;
+	position: relative;
+}
+.cf::after, .cf::before {
+	content: " ";
+	display: table;
+}
+.cf::after {
+	clear: both;
+}
+div.content {
+	margin: 0;
+	padding: 0;
+}
+div.content {
+	width: 65%;
+	float: left;
+}
+.container, div.in {
+	width: 86%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+div.in {
+	position: relative;
+}
+</style>
+</head>
+</html>

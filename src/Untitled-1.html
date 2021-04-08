@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+</div>
+
+  <style>
+    @media (min-width: 200px){
+   .wrapper {
+    display: grid;
+    width: 80%;
+    grid-auto-rows: minmax(70px, auto);
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+      "hd hd hd hd hd "
+      "sd sd ft main main"
+}}
+  
+.header {
+    grid-area: hd;
+    background-color: aqua;
+}
+.footer {
+    grid-area: ft;
+    background-color: rebeccapurple;
+    
+    
+}
+.content {
+    grid-area: main;
+    background-color: red;
+}
+.sidebar {
+    grid-area: sd;
+    background-color: green;
+}
+  </style>
+</body>
+</html>
