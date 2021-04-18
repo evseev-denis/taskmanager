@@ -1,16 +1,24 @@
 
+ 
+  @media screen and (min-width: 576px) {
+    .allform {
+  width: 50%;
+  
+}
+
+}
+
 
   .allform {
-   display: grid;
-   margin-left: auto;
-   margin-right:auto;
-   width: 50%;
-   grid-template-areas:
-   "mod mod mod mod mod"
-     "hd hd hd hd hd "
-   "bt1 bt1 st bt2 bt2 "
-   " db db db db db ";
-}
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+    "mod mod mod mod mod "
+      "hd hd hd hd hd "
+    "bt1 bt1 st bt2 bt2 "
+    " db db db db db ";
+  }
 .modal{
   grid-area: mod;
 }
@@ -23,10 +31,10 @@
 .taskname{
   grid-area: hd;
   border-color: rgb(0, 255, 106);
-  background-color: #808080;
+  background-color: #2387af8f;
     border: 3px solid #719ECE;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: 0 0  100px #719ECE;
 }
 .button{
@@ -42,14 +50,11 @@
     border-radius: 12px;
     background-color: chartreuse;
  }
- .dbdata{
-  grid-area: db;
-
-   color: black;
-   background-color: #968943 ;
-  overflow-wrap: break-word;
- }
  .dbdata1{
-  
+  grid-area: db;
+   color: rgb(155, 36, 36);
+   background-color: #968943 ;
+   max-width: 700px;
+   word-wrap: break-word;
  }
-
+ 

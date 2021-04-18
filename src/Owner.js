@@ -16,14 +16,14 @@ export default class Owner extends React.Component {
     modal: '',
     value: "",
     handleFocus: '',
-    colorModal: { backgroundColor: "red" }
+    colorModal: { backgroundColor: "red" },
   }
   handleChange = event => {
-    debugger
+    
     this.setState({ name: event.target.value });
   }
   handleChangeList = event => {
-    debugger
+    
     this.setState({ value: event.target.value });
   }
   handleSubmit = event => {
@@ -37,7 +37,7 @@ export default class Owner extends React.Component {
     if (user.value.length < 1 && user.name.length > 1) { this.setState({ modal: 'select status !' }); TimeoutModal() }
     if (user.value.length > 1 && user.name.length < 1) { this.setState({ modal: 'INSERT TEXT!' }); TimeoutModal() }
     if (user.value.length > 1 && user.name.length > 1 && user.value != user.name) {
-      axios.post(`http://localhost:3002/descriptionwrite`, { user },   {
+      axios.post(`http://172.17.11.44:3004/w`, { user },   {
         headers: {
           'Access-Control-Allow-Origin': '*',
         },
@@ -45,7 +45,7 @@ export default class Owner extends React.Component {
         .then(res => {
           document.querySelector('textarea').value = ''
           this.state.name = ''
-          debugger
+          
           this.setState({ modal: 'Data succefull added!', colorModal: { backgroundColor: 'green' } })
           this.state.colorModal = { backgroundColor: 'red' }
           TimeoutModal()
@@ -53,16 +53,17 @@ export default class Owner extends React.Component {
     }
   }
   handleSubmitt = event => {
-    debugger
     event.preventDefault();
-    axios.get(`http://localhost:3002/descriptionget`)
+    axios.get(`http://172.17.11.44:3004/g`)
       .then(res => {
+       
         this.setState({ dataq: res.data })
-        debugger
+        
       })
   }
+  
   render() {
-    var w = this.state.dataq.map((r) => <h2 className={style.dbdata}><p>{r}</p></h2>)
+    var w = this.state.dataq.map((r) => <h2 ><p>{r}</p></h2>)
     var colorModal = this.state.colorModal
     return (
       <div className={style.allform}>
@@ -79,7 +80,7 @@ export default class Owner extends React.Component {
             <option value='not resolved'>not resolved</option>
           </select>
           <button className={style.button2} onClick={this.handleSubmitt} ><h2>see all tasks</h2></button>
-        <div className={style.dbdata1}>{w}</div>
+        <div className={style.dbdata1} >{w}</div>
       </div>
     )
   }
