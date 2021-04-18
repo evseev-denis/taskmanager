@@ -58,6 +58,7 @@ export default class Owner extends React.Component {
       .then(res => {
        
         this.setState({ dataq: res.data })
+        //fod
         
       })
   }
